@@ -13152,6 +13152,19 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="pLBL3_PiXI_opt">pLBL3_PiXI_opt<a class="anchor-link" href="#pLBL3_PiXI_opt">&#182;</a></h1><p>The pLBL_PiXI is the <a href="pLBL3.ipynb">pLBL3 vector</a> with the xylose isomerase gene from Piromyces sp. located 
+after the TEF1 promoter. The XI gene is the codon optimized gene described by <a href="https://www.ncbi.nlm.nih.gov/pubmed/19218403">Brat et al. 2009</a>.</p>
+<ul>
+<li>cseguid = <code>DR2uis2xRt9A-Gc_zYizL1N_jiI</code></li>
+<li>size    = 8892 bp</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
@@ -13183,7 +13196,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">p426H7_opt_XI_Piro</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s2">&quot;fwdcodonoptimizedpiromycesxyloseisomerasegene/p426H7-opt.XI-Piro.gbk&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">p426H7_opt_XI_Piro</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="s2">&quot;../data/raw/fwdcodonoptimizedpiromycesxyloseisomerasegene/p426H7-opt.XI-Piro.gbk&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13462,7 +13475,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidates</span> <span class="o">=</span> <span class="n">asm</span><span class="o">.</span><span class="n">assemble_circular</span><span class="p">()</span>
@@ -13479,7 +13492,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -13496,7 +13509,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate</span> <span class="o">=</span> <span class="n">candidates</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -13513,7 +13526,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -13537,7 +13550,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pLBL3_PiXI_opt</span> <span class="o">=</span> <span class="n">candidate</span><span class="o">.</span><span class="n">synced</span><span class="p">(</span><span class="n">pLBL3</span><span class="p">)</span>
@@ -13550,10 +13563,10 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pLBL3_PiXI_opt</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pLBL3_PiXI_opt</span>
 </pre></div>
 
     </div>
@@ -13566,13 +13579,13 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>DR2uis2xRt9A-Gc_zYizL1N_jiI</pre>
+<pre>Dseqrecord(o8892)</pre>
 </div>
 
 </div>
@@ -13583,7 +13596,20 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="n">pLBL3_PiXI_opt</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span> <span class="o">==</span><span class="s2">&quot;DR2uis2xRt9A-Gc_zYizL1N_jiI&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pLBL3_PiXI_opt</span><span class="o">.</span><span class="n">stamp</span><span class="p">()</span>
@@ -13599,7 +13625,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -13616,7 +13642,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pLBL3_PiXI_opt</span><span class="o">.</span><span class="n">locus</span> <span class="o">=</span> <span class="s2">&quot;pLBL3_PiXI_opt&quot;</span>
@@ -13629,7 +13655,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pLBL3_PiXI_opt</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>
