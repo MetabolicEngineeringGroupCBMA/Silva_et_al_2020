@@ -1,5 +1,6 @@
 LOCUS       pLBL3_PiXI_opt          8892 bp    DNA     circular UNK 01-JAN-1980
-DEFINITION  cSEGUID_DR2uis2xRt9A-Gc_zYizL1N_jiI_2019-05-27T06:05:08.112288.
+DEFINITION  cSEGUID_DR2uis2xRt9A-Gc_zYizL1N_jiI
+            cSEGUID_DR2uis2xRt9A-Gc_zYizL1N_jiI_2019-05-27T06:05:08.112288.
 ACCESSION   id
 VERSION     id
 KEYWORDS    .
@@ -24,19 +25,19 @@ FEATURES             Location/Qualifiers
                      /gene="opt. XI-Piro"
                      /SECDrawAs="Gene"
                      /SECStyleId="1"
-     primer_bind     1176..1194
+     primer_bind     1176..1193
                      /label="f1314"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     1176..1194
+     primer_bind     1176..1193
                      /label="f1314"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(2467..2489)
+     primer_bind     complement(2471..2489)
                      /label="r1314"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(2467..2489)
+     primer_bind     complement(2471..2489)
                      /label="r1314"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
@@ -44,15 +45,15 @@ FEATURES             Location/Qualifiers
                      /note="866_pYPKpwF"
                      /ApEinfo_revcolor="red"
                      /ApEinfo_fwdcolor="green"
-     primer_bind     3183..3197
+     primer_bind     3183..3196
                      /label="f2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     3183..3197
+     primer_bind     3183..3196
                      /label="f2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     3183..3197
+     primer_bind     3183..3196
                      /label="f2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
@@ -73,18 +74,6 @@ FEATURES             Location/Qualifiers
                      /ApEinfo_revcolor="#ffbaba"
      primer_bind     complement(6198..6211)
                      /label="Fw_LEU2"
-                     /ApEinfo_fwdcolor="#baffa3"
-                     /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(6355..6373)
-                     /label="r2955"
-                     /ApEinfo_fwdcolor="#baffa3"
-                     /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(6355..6373)
-                     /label="r2955"
-                     /ApEinfo_fwdcolor="#baffa3"
-                     /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(6355..6387)
-                     /label="r2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
      primer_bind     6751..6780
@@ -123,11 +112,11 @@ FEATURES             Location/Qualifiers
      regulatory      8176..8573
                      /regulatory_class="promoter"
                      /note="from TEF"
-     primer_bind     complement(8445..8466)
+     primer_bind     complement(8440..8466)
                      /label="r4008"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(8445..8466)
+     primer_bind     complement(8440..8466)
                      /label="r4008"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
