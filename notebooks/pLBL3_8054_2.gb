@@ -1,5 +1,6 @@
 LOCUS       pLBL3_8054_2            8887 bp    DNA     circular UNK 01-JAN-1980
-DEFINITION  cSEGUID_901r0RNABCaZvc4TWAk5W3OOLLE_2019-05-26T10:00:55.059032.
+DEFINITION  cSEGUID_901r0RNABCaZvc4TWAk5W3OOLLE
+            cSEGUID_901r0RNABCaZvc4TWAk5W3OOLLE_2019-05-26T10:00:55.059032.
 ACCESSION   id
 VERSION     id
 KEYWORDS    .
@@ -32,15 +33,15 @@ FEATURES             Location/Qualifiers
                      /note="866_pYPKpwF"
                      /ApEinfo_revcolor="red"
                      /ApEinfo_fwdcolor="green"
-     primer_bind     3178..3192
+     primer_bind     3178..3191
                      /label="f2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     3178..3192
+     primer_bind     3178..3191
                      /label="f2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     3178..3192
+     primer_bind     3178..3191
                      /label="f2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
@@ -63,15 +64,15 @@ FEATURES             Location/Qualifiers
                      /label="Fw_LEU2"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(6350..6368)
+     primer_bind     complement(6351..6368)
                      /label="r2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(6350..6368)
+     primer_bind     complement(6351..6368)
                      /label="r2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(6350..6382)
+     primer_bind     complement(6351..6382)
                      /label="r2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
@@ -111,11 +112,11 @@ FEATURES             Location/Qualifiers
      regulatory      8171..8568
                      /regulatory_class="promoter"
                      /note="from TEF"
-     primer_bind     complement(8440..8461)
+     primer_bind     complement(8435..8461)
                      /label="r4008"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(8440..8461)
+     primer_bind     complement(8435..8461)
                      /label="r4008"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"

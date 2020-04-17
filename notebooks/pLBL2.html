@@ -13018,45 +13018,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
-<style type="text/css">
     @import url(http://fonts.googleapis.com/css?family=Lato|Source+Code+Pro|Montserrat:400,700);
 
 #notebook-container {
@@ -13155,17 +13116,9 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Construction-of-the-pLBL2-vector">Construction of the pLBL2 vector<a class="anchor-link" href="#Construction-of-the-pLBL2-vector">&#182;</a></h1><p>The pLBL2 is a yeast/E. coli shuttle vector for expression of genes in S. cerevisiae. 
-The expressed gene is controlled by the TEF1 promoter and RPS7B terminator.</p>
-<p>The vector has:</p>
-<ul>
-<li>a pUC origin of replication</li>
-<li>an ampiccilin marker</li>
-<li>a URA3 marker</li>
-<li>a 2µ origin of replication</li>
-</ul>
-<p>A single AjiI site was removed from the 2µ sequence in the construction process.</p>
-<p>cSEGUID = Y9N9GHq6Rkv4mVbKbZXcWmMSOg0</p>
+<h1 id="Construction-of-the-pLBL2-vector">Construction of the pLBL2 vector<a class="anchor-link" href="#Construction-of-the-pLBL2-vector">&#182;</a></h1><p>The pLBL2 vector is a yeast/E. coli shuttle vector for expression of genes in S. cerevisiae.
+It is a derivative of pYPK7_TEF1_RPS7B but with a URA3 marker instead of the kanMX4 of pYPK7_TEF1_RPS7B.</p>
+<p>An AjiI site was removed from the 2µ sequence during the construction process.</p>
 
 </div>
 </div>
@@ -13175,7 +13128,7 @@ The expressed gene is controlled by the TEF1 promoter and RPS7B terminator.</p>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pydna.all</span> <span class="k">import</span> <span class="o">*</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pydna.all</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 
     </div>
@@ -13253,7 +13206,7 @@ The expressed gene is controlled by the TEF1 promoter and RPS7B terminator.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Smaller-fragment-from-pYPKpw">Smaller fragment from pYPKpw<a class="anchor-link" href="#Smaller-fragment-from-pYPKpw">&#182;</a></h3><p>the 2.9kb fragment contains the pBR322 ori, URA3 and a part of the 2µ</p>
+<h3 id="Smaller-fragment-from-pYPKpw">Smaller fragment from pYPKpw<a class="anchor-link" href="#Smaller-fragment-from-pYPKpw">&#182;</a></h3><p>the 2.9kb fragment contains the pUC origin, URA3 and a part of the 2µ</p>
 
 </div>
 </div>
@@ -13322,7 +13275,8 @@ GAAG..CGTG</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Theoretically expected sequence of pLBL2</p>
+<p>The theoretically expected sequence of pLBL2 is the two fragments (f4008, f2955) ligated together with one mutated nucleotide 
+to form a 6964 bp circular DNA molecule. The nucleotide can be A or C or T (IUPAC DNA code H ) in order to remove one AjiI site from the 2µ sequence.</p>
 
 </div>
 </div>
@@ -13333,19 +13287,7 @@ GAAG..CGTG</pre>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">theoretical_pLBL2_sequence</span> <span class="o">=</span> <span class="p">(</span><span class="n">f2955</span><span class="o">+</span><span class="n">Dseqrecord</span><span class="p">(</span><span class="s2">&quot;h&quot;</span><span class="p">)</span><span class="o">+</span><span class="n">f4008</span><span class="p">)</span><span class="o">.</span><span class="n">looped</span><span class="p">()</span><span class="o">.</span><span class="n">synced</span><span class="p">(</span><span class="n">pYPKpw</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">theoretical_pLBL2_sequence</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span>
+<span class="n">theoretical_pLBL2_sequence</span><span class="p">,</span> <span class="n">theoretical_pLBL2_sequence</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13358,13 +13300,13 @@ GAAG..CGTG</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[9]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>Y9N9GHq6Rkv4mVbKbZXcWmMSOg0</pre>
+<pre>(Dseqrecord(o6964), Y9N9GHq6Rkv4mVbKbZXcWmMSOg0)</pre>
 </div>
 
 </div>
@@ -13376,14 +13318,15 @@ GAAG..CGTG</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Design two primer pairs for the gibson assembly of pLBL2</p>
+<p>Design two primer pairs for the gibson assembly of pLBL2. 
+The objects below are instances of the Amplicon class storing a forward primers and a reverse primer.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">f2955product</span> <span class="o">=</span> <span class="n">primer_design</span><span class="p">(</span><span class="n">f2955</span><span class="p">)</span>
@@ -13395,9 +13338,18 @@ GAAG..CGTG</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The f2955tails, f4008tails are modified with tails to allow assembly by homologous recombination. The "h" nucleotide is incorporated into the 
+PCR primer tails.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">f2955tails</span><span class="p">,</span> <span class="n">f4008tails</span> <span class="o">=</span> <span class="n">circular_assembly_fragments</span><span class="p">((</span><span class="n">f2955product</span><span class="p">,</span> <span class="n">Dseqrecord</span><span class="p">(</span><span class="s2">&quot;h&quot;</span><span class="p">),</span><span class="n">f4008product</span><span class="p">),</span> <span class="n">overlap</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
@@ -13410,7 +13362,7 @@ GAAG..CGTG</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">f2955tails</span><span class="p">,</span> <span class="n">f4008tails</span>
@@ -13426,7 +13378,7 @@ GAAG..CGTG</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -13437,6 +13389,28 @@ GAAG..CGTG</pre>
 
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The two fragments are assembled by homologous recombination.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f2955tails</span><span class="o">.</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;f2955&quot;</span>
+<span class="n">f4008tails</span><span class="o">.</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;f4008&quot;</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -13518,6 +13492,15 @@ algorithm..: common_sub_strings</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Apparently several circular products are possible. Care should be taken when confirming this construct.
+We assume that the first one is correct since it has the expected size.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
@@ -13542,15 +13525,15 @@ algorithm..: common_sub_strings</pre>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<pre> -|2982bp_PCR_prod|27
-|                  \/
-|                  /\
-|                  27|4035bp_PCR_prod|26
-|                                     \/
-|                                     /\
-|                                     26-
-|                                        |
- ----------------------------------------</pre>
+<pre> -|f2955|27
+|        \/
+|        /\
+|        27|f4008|26
+|                 \/
+|                 /\
+|                 26-
+|                    |
+ --------------------</pre>
 </div>
 
 </div>
@@ -13564,7 +13547,8 @@ algorithm..: common_sub_strings</pre>
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pYPK0_TEF1_RPS7B</span> <span class="o">=</span> <span class="n">candidate</span><span class="o">.</span><span class="n">synced</span><span class="p">(</span><span class="n">pYPKpw</span><span class="p">)</span>
+<span class="n">pYPK0_TEF1_RPS7B</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13597,19 +13581,6 @@ algorithm..: common_sub_strings</pre>
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pYPK0_TEF1_RPS7B</span> <span class="o">=</span> <span class="n">candidate</span><span class="o">.</span><span class="n">synced</span><span class="p">(</span><span class="n">pYPKpw</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pLBL2</span> <span class="o">=</span> <span class="n">pYPK0_TEF1_RPS7B</span>
 <span class="k">assert</span> <span class="n">pLBL2</span><span class="o">.</span><span class="n">seguid</span><span class="p">()</span> <span class="o">==</span> <span class="n">theoretical_pLBL2_sequence</span><span class="o">.</span><span class="n">seguid</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;ouH9liSpWQvjZEhoT3kScn2aTHk&#39;</span>
 </pre></div>
@@ -13621,7 +13592,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f2955tails</span><span class="o">.</span><span class="n">forward_primer</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;tab&quot;</span><span class="p">))</span>
@@ -13644,13 +13615,13 @@ algorithm..: common_sub_strings</pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>f2955	GAAATTTCAGCCACTTCACAGGCGGTTT
+<pre>f2955	GAAATTTCAGCCACTTCACAGGCGGTT
 
-r2955	ACCGGGGATGCGAdGTGCAAGATTACCTATGCA
+r2955	ACCGGGGATGCGAdGTGCAAGATTACCTATGC
 
 f4008	GGTAATCTTGCAChTCGCATCCCCGGT
 
-r4008	ACCGCCTGTGAAGTGGCTGAAATTTCGTACAAAAA
+r4008	ACCGCCTGTGAAGTGGCTGAAATTTCGTACAAAAAATTTC
 
 </pre>
 </div>
@@ -13663,14 +13634,14 @@ r4008	ACCGCCTGTGAAGTGGCTGAAATTTCGTACAAAAA
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The primers below were bought from IDT. They are virtually the same as the designed ones, but for some trimming for technical reasons.</p>
+<p>The primers below were bought from IDT. They were designed manually, so they are not identical to the ones above.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">p1s</span><span class="p">,</span><span class="n">p2s</span><span class="p">,</span><span class="n">p3s</span><span class="p">,</span><span class="n">p4s</span> <span class="o">=</span> <span class="n">parse_primers</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -13689,99 +13660,49 @@ r4008	ACCGCCTGTGAAGTGGCTGAAATTTCGTACAAAAA
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>To confirm that the primers used results in the same result, the simulation above is repeated with the new primers.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">p1s</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;tab&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f2955tails</span><span class="o">.</span><span class="n">forward_primer</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;tab&quot;</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">p2s</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;tab&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f2955tails</span><span class="o">.</span><span class="n">reverse_primer</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;tab&quot;</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">p3s</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;tab&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f4008tails</span><span class="o">.</span><span class="n">forward_primer</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;tab&quot;</span><span class="p">))</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">p4s</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;tab&quot;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">f4008tails</span><span class="o">.</span><span class="n">reverse_primer</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;tab&quot;</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">product_2954fw_2954rv2</span> <span class="o">=</span> <span class="n">pcr</span><span class="p">(</span><span class="n">p1s</span><span class="p">,</span> <span class="n">p2s</span><span class="p">,</span> <span class="n">pYPKpw</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">product_4009fw2_4009rv</span> <span class="o">=</span> <span class="n">pcr</span><span class="p">(</span><span class="n">p3s</span><span class="p">,</span><span class="n">p4s</span><span class="p">,</span><span class="n">pYPK7_TEF1_RPS7B</span><span class="p">)</span>
+</pre></div>
 
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2954fw	GAAATTTCAGCCACTTCACAGGCGGTTTT
-
-f2955	GAAATTTCAGCCACTTCACAGGCGGTTT
-
-2954rv2	CCGGGGATGCGAdgTGCAAGATTACCTATGC
-
-r2955	ACCGGGGATGCGAdGTGCAAGATTACCTATGCA
-
-4009fw2	AGGTAATCTTGCAchTCGCATCCCCGGTTC
-
-f4008	GGTAATCTTGCAChTCGCATCCCCGGT
-
-4009rv	ACCGCCTGTGAAGTGGCTGAAATTTCGTA
-
-r4008	ACCGCCTGTGAAGTGGCTGAAATTTCGTACAAAAA
-
-</pre>
+    </div>
 </div>
 </div>
 
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Tthe two fragments from each vector were PCR amplified using the purchased primers.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f2981</span> <span class="o">=</span> <span class="n">pcr</span><span class="p">(</span><span class="n">p1s</span><span class="p">,</span> <span class="n">p2s</span><span class="p">,</span> <span class="n">pYPKpw</span><span class="p">)</span>
-<span class="n">f2981</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">asm</span> <span class="o">=</span> <span class="n">Assembly</span><span class="p">((</span><span class="n">product_2954fw_2954rv2</span><span class="p">,</span> <span class="n">product_4009fw2_4009rv</span><span class="p">),</span> <span class="n">limit</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[22]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-Amplicon(2981)
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13791,30 +13712,10 @@ Amplicon(2981)
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">f4036</span> <span class="o">=</span> <span class="n">pcr</span><span class="p">(</span><span class="n">p3s</span><span class="p">,</span><span class="n">p4s</span><span class="p">,</span><span class="n">pYPK7_TEF1_RPS7B</span><span class="p">)</span>
-<span class="n">f4036</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate</span> <span class="o">=</span> <span class="n">candidates</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[23]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-Amplicon(4036)
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -13822,140 +13723,6 @@ Amplicon(4036)
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">asm</span> <span class="o">=</span> <span class="n">Assembly</span><span class="p">((</span><span class="n">f2981</span><span class="p">,</span> <span class="n">f4036</span><span class="p">),</span> <span class="n">limit</span><span class="o">=</span><span class="mi">25</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidates</span> <span class="o">=</span> <span class="n">asm</span><span class="o">.</span><span class="n">assemble_circular</span><span class="p">()</span>
-<span class="n">candidates</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[25]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[Contig(o6964),
- Contig(o6964),
- Contig(o4871),
- Contig(o4871),
- Contig(o2093),
- Contig(o2093)]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Examine the largest sequence</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate</span> <span class="o">=</span> <span class="n">candidates</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="n">candidate</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[26]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<pre> -|2981bp_PCR_prod|27
-|                  \/
-|                  /\
-|                  27|4036bp_PCR_prod|26
-|                                     \/
-|                                     /\
-|                                     26-
-|                                        |
- ----------------------------------------</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[27]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Y9N9GHq6Rkv4mVbKbZXcWmMSOg0</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="n">pLBL2</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span> <span class="o">==</span> <span class="n">candidate</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;Y9N9GHq6Rkv4mVbKbZXcWmMSOg0&#39;</span>
@@ -13977,17 +13744,17 @@ Amplicon(4036)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>pLBL2 should only have one AjiI site</p>
+<p>pLBL2 should only have one AjiI site, as this was one of the design goals.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio.Restriction</span> <span class="k">import</span> <span class="n">AjiI</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio.Restriction</span> <span class="kn">import</span> <span class="n">AjiI</span>
 </pre></div>
 
     </div>
@@ -13997,7 +13764,7 @@ Amplicon(4036)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pLBL2</span><span class="o">.</span><span class="n">linearize</span><span class="p">(</span><span class="n">AjiI</span><span class="p">)</span>
@@ -14013,7 +13780,7 @@ Amplicon(4036)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -14030,7 +13797,7 @@ Amplicon(4036)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pLBL2</span><span class="o">.</span><span class="n">locus</span> <span class="o">=</span> <span class="s2">&quot;pLBL2&quot;</span>
@@ -14044,7 +13811,7 @@ Amplicon(4036)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pLBL2</span><span class="o">.</span><span class="n">stamp</span><span class="p">()</span>
@@ -14060,7 +13827,7 @@ Amplicon(4036)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -14077,7 +13844,7 @@ Amplicon(4036)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pLBL2</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;pLBL2.gb&quot;</span><span class="p">)</span>
@@ -14117,7 +13884,7 @@ Amplicon(4036)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">URA3f</span><span class="p">,</span> <span class="n">URA3r</span><span class="p">,</span> <span class="n">_2mu_f</span><span class="p">,</span> <span class="n">_2mu_r</span> <span class="o">=</span> <span class="n">parse</span><span class="p">(</span><span class="s1">&#39;&#39;&#39;</span>
@@ -14144,7 +13911,7 @@ Amplicon(4036)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pcr</span><span class="p">(</span><span class="n">URA3f</span><span class="p">,</span> <span class="n">URA3r</span><span class="p">,</span> <span class="n">pLBL2</span><span class="p">)</span>
@@ -14160,7 +13927,7 @@ Amplicon(4036)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[35]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -14176,7 +13943,7 @@ Amplicon(1056)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pcr</span><span class="p">(</span><span class="n">_2mu_f</span><span class="p">,</span> <span class="n">_2mu_r</span><span class="p">,</span> <span class="n">pLBL2</span><span class="p">)</span>
@@ -14192,7 +13959,7 @@ Amplicon(1056)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 

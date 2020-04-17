@@ -54,15 +54,15 @@ FEATURES             Location/Qualifiers
                      /note="866_pYPKpwF"
                      /ApEinfo_revcolor="red"
                      /ApEinfo_fwdcolor="green"
-     primer_bind     3183..3197
+     primer_bind     3183..3196
                      /label="f2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     3183..3197
+     primer_bind     3183..3196
                      /label="f2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     3183..3197
+     primer_bind     3183..3196
                      /label="f2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
@@ -81,15 +81,15 @@ FEATURES             Location/Qualifiers
                      /ApEinfo_revcolor="red"
                      /label="URA3"
                      /ApEinfo_fwdcolor="cyan"
-     primer_bind     complement(5743..5761)
+     primer_bind     complement(5744..5761)
                      /label="r2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(5743..5761)
+     primer_bind     complement(5744..5761)
                      /label="r2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(5743..5775)
+     primer_bind     complement(5744..5775)
                      /label="r2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
@@ -129,11 +129,11 @@ FEATURES             Location/Qualifiers
      regulatory      7564..7961
                      /regulatory_class="promoter"
                      /note="from TEF"
-     primer_bind     complement(7833..7854)
+     primer_bind     complement(7828..7854)
                      /label="r4008"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(7833..7854)
+     primer_bind     complement(7828..7854)
                      /label="r4008"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"

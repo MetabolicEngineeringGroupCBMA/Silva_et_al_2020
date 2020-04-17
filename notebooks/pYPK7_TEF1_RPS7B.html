@@ -13018,45 +13018,6 @@ ul.typeahead-list  > li > a.pull-right {
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
     </style>
 <style type="text/css">
-    
-/* Temporary definitions which will become obsolete with Notebook release 5.0 */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-
-    </style>
-<style type="text/css">
     @import url(http://fonts.googleapis.com/css?family=Lato|Source+Code+Pro|Montserrat:400,700);
 
 #notebook-container {
@@ -13155,17 +13116,20 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Construction-of-the-pYPK7_TEF1_RPS7B-expression-vector">Construction of the pYPK7_TEF1_RPS7B expression vector<a class="anchor-link" href="#Construction-of-the-pYPK7_TEF1_RPS7B-expression-vector">&#182;</a></h1><p>The pLBL2 is a yeast/E. coli shuttle vector for expression of genes in S. cerevisiae. 
+<h1 id="Construction-of-the-pYPK7_TEF1_RPS7B-expression-vector">Construction of the pYPK7_TEF1_RPS7B expression vector<a class="anchor-link" href="#Construction-of-the-pYPK7_TEF1_RPS7B-expression-vector">&#182;</a></h1><p>The pYPK7_TEF1_RPS7B is a <em>Saccharomyces cerevisiae</em>/<em>E. coli</em> shuttle vector for expression of genes in S. cerevisiae. 
 The expressed gene is controlled by the TEF1 promoter and RPS7B terminator.</p>
-<p>The vector has:</p>
+<ul>
+<li>The TEF1 promoter is the intergenic sequence between MRL1(YPR079W) and TEF1(YPR080W).</li>
+<li>The RPS7B terminator is the intergenic sequence between YNL095C and RPS7B(YNL096C).</li>
+</ul>
+<p>Additionally, the vector has the following features:</p>
 <ul>
 <li>a pUC origin of replication</li>
-<li>an ampiccilin marker</li>
-<li>a kanMX4 hygromycin marker</li>
+<li>an ampicillin marker</li>
+<li>a kanMX4 geneticin marker</li>
 <li>a 2µ origin of replication</li>
 </ul>
-<p>A single AjiI site was removed from the 2µ sequence in the construction process.</p>
-<p>cSEGUID = VuKjAmG4X02Zo7pJAK_ncuxOKas</p>
+<p>The python package <a href="https://github.com/BjornFJohansson/pydna">pydna</a> was used to simulate the cloning.</p>
 
 </div>
 </div>
@@ -13175,13 +13139,21 @@ The expressed gene is controlled by the TEF1 promoter and RPS7B terminator.</p>
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pydna.all</span> <span class="k">import</span> <span class="o">*</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pydna.all</span> <span class="kn">import</span> <span class="o">*</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The eight primers below are standard primers for the <a href="https://pubmed.ncbi.nlm.nih.gov/26916955">yeast pathway kit</a></p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13211,31 +13183,97 @@ The expressed gene is controlled by the TEF1 promoter and RPS7B terminator.</p>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The <a href="https://github.com/BjornFJohansson/ypk-xylose-pathways/blob/master/notebooks/pYPKa_Z_TEF1.gb">pYPKa_Z_TEF1</a> vector contains the promoter.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pYPKa_Z_TEF1</span> <span class="o">=</span>  <span class="n">read</span><span class="p">(</span><span class="n">download_text</span><span class="p">(</span><span class="s2">&quot;https://raw.github.com/BjornFJohansson/ypk-xylose-pathways/master/notebooks/pYPKa_Z_TEF1.gb&quot;</span><span class="p">))</span>
+<span class="n">pYPKa_Z_TEF1</span><span class="p">,</span> <span class="n">pYPKa_Z_TEF1</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(Dseqrecord(o3721), inRfvhISKV2ATGWH7MRU60tr5sk)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The <a href="https://github.com/BjornFJohansson/pYPKa_ZE/blob/master/notebooks/pYPKa_E_RPS7B.gb">pYPKa_E_RPS7B</a> contains the terminator.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pYPKa_E_RPS7B</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="n">download_text</span><span class="p">(</span><span class="s2">&quot;https://raw.github.com/BjornFJohansson/pYPKa_ZE//master/notebooks/pYPKa_E_RPS7B.gb&quot;</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pYPKa_E_RPS7B</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="n">download_text</span><span class="p">(</span><span class="s2">&quot;https://raw.github.com/BjornFJohansson/pYPKa_ZE/master/notebooks/pYPKa_E_RPS7B.gb&quot;</span><span class="p">))</span>
+<span class="n">pYPKa_E_RPS7B</span><span class="p">,</span> <span class="n">pYPKa_E_RPS7B</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[4]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(Dseqrecord(o3737), eQrot5NFmMjgV23mD_5DXsCoUA4)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The <a href="https://github.com/BjornFJohansson/ypk-xylose-pathways/blob/master/notebooks/pYPKp7.ipynb">pYPKp7</a> vector contains the rest of the features.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13243,19 +13281,48 @@ The expressed gene is controlled by the TEF1 promoter and RPS7B terminator.</p>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pYPKp7</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="n">download_text</span><span class="p">(</span><span class="s2">&quot;https://raw.github.com/BjornFJohansson/ypk-xylose-pathways/master/notebooks/pYPKp7.gb&quot;</span><span class="p">))</span>
+<span class="n">pYPKp7</span><span class="p">,</span> <span class="n">pYPKp7</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(Dseqrecord(o6180), w8zCE05nnVaKMSe-K0q29kjVt4k)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The promoter is amplified from the pYPKa_Z_TEF1 vector.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">first</span>  <span class="o">=</span> <span class="n">pcr</span><span class="p">(</span> <span class="n">p577</span><span class="p">,</span> <span class="n">p467</span><span class="p">,</span> <span class="n">pYPKa_Z_TEF1</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">promoter</span>  <span class="o">=</span> <span class="n">pcr</span><span class="p">(</span> <span class="n">p577</span><span class="p">,</span> <span class="n">p467</span><span class="p">,</span> <span class="n">pYPKa_Z_TEF1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13268,7 +13335,7 @@ The expressed gene is controlled by the TEF1 promoter and RPS7B terminator.</p>
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">last</span>   <span class="o">=</span> <span class="n">pcr</span><span class="p">(</span> <span class="n">p468</span><span class="p">,</span> <span class="n">p578</span><span class="p">,</span> <span class="n">pYPKa_E_RPS7B</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">promoter</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;promoter&quot;</span>
 </pre></div>
 
     </div>
@@ -13276,12 +13343,20 @@ The expressed gene is controlled by the TEF1 promoter and RPS7B terminator.</p>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The terminator is amplified from the pYPKa_E_RPS7B vector.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio.Restriction</span> <span class="k">import</span> <span class="n">ZraI</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">terminator</span>   <span class="o">=</span> <span class="n">pcr</span><span class="p">(</span> <span class="n">p468</span><span class="p">,</span> <span class="n">p578</span><span class="p">,</span> <span class="n">pYPKa_E_RPS7B</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13294,7 +13369,28 @@ The expressed gene is controlled by the TEF1 promoter and RPS7B terminator.</p>
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pYPKp7_Z</span> <span class="o">=</span> <span class="n">pYPKp7</span><span class="o">.</span><span class="n">linearize</span><span class="p">(</span><span class="n">ZraI</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">terminator</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;terminator&quot;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The pYPKp7 vector is linearized with <a href="http://rebase.neb.com/rebase/enz/ZraI.html">ZraI</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">Bio.Restriction</span> <span class="kn">import</span> <span class="n">ZraI</span>
 </pre></div>
 
     </div>
@@ -13304,10 +13400,31 @@ The expressed gene is controlled by the TEF1 promoter and RPS7B terminator.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">asm</span> <span class="o">=</span> <span class="n">Assembly</span><span class="p">((</span><span class="n">pYPKp7_Z</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">),</span> <span class="n">limit</span><span class="o">=</span><span class="mi">87</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pYPKp7_Z</span> <span class="o">=</span> <span class="n">pYPKp7</span><span class="o">.</span><span class="n">linearize</span><span class="p">(</span><span class="n">ZraI</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The three linar DNA fragments are assembled by homologous recombination.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">asm</span> <span class="o">=</span> <span class="n">Assembly</span><span class="p">((</span><span class="n">pYPKp7_Z</span><span class="p">,</span> <span class="n">promoter</span><span class="p">,</span> <span class="n">terminator</span><span class="p">),</span> <span class="n">limit</span><span class="o">=</span><span class="mi">87</span><span class="p">)</span>
 <span class="n">asm</span>
 </pre></div>
 
@@ -13321,7 +13438,7 @@ The expressed gene is controlled by the TEF1 promoter and RPS7B terminator.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -13342,7 +13459,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidates</span> <span class="o">=</span> <span class="n">asm</span><span class="o">.</span><span class="n">assemble_circular</span><span class="p">()</span>
@@ -13359,7 +13476,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -13374,9 +13491,18 @@ algorithm..: common_sub_strings</pre>
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Two candidates are assembled, these should be identical. We pick the first one.
+We can see that the three fragments assembled by homologous sequences between 87 and 242 bp long.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">candidate</span> <span class="o">=</span> <span class="n">candidates</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -13393,7 +13519,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[12]:</div>
+    <div class="prompt output_prompt">Out[14]:</div>
 
 
 
@@ -13401,15 +13527,15 @@ algorithm..: common_sub_strings</pre>
 <pre> -|pYPKp7_lin|124
 |             \/
 |             /\
-|             124|848bp_PCR_prod|87
-|                                \/
-|                                /\
-|                                87|985bp_PCR_prod|242
-|                                                  \/
-|                                                  /\
-|                                                  242-
-|                                                     |
- -----------------------------------------------------</pre>
+|             124|promoter|87
+|                          \/
+|                          /\
+|                          87|terminator|242
+|                                        \/
+|                                        /\
+|                                        242-
+|                                           |
+ -------------------------------------------</pre>
 </div>
 
 </div>
@@ -13417,10 +13543,18 @@ algorithm..: common_sub_strings</pre>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We call the resulting vector pYPK7_TEF1_RPS7B and we synchronize the circular sequence so that it starts at the same position.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pYPK7_TEF1_RPS7B</span> <span class="o">=</span> <span class="n">candidate</span><span class="o">.</span><span class="n">synced</span><span class="p">(</span><span class="n">pYPKp7</span><span class="p">)</span>
@@ -13433,7 +13567,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="n">pYPK7_TEF1_RPS7B</span><span class="o">.</span><span class="n">cseguid</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;VuKjAmG4X02Zo7pJAK_ncuxOKas&quot;</span>
@@ -13446,7 +13580,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pYPK7_TEF1_RPS7B</span><span class="o">.</span><span class="n">stamp</span><span class="p">()</span>
@@ -13462,7 +13596,7 @@ algorithm..: common_sub_strings</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -13479,7 +13613,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pYPK7_TEF1_RPS7B</span><span class="o">.</span><span class="n">locus</span> <span class="o">=</span> <span class="s2">&quot;pYPK7_TEF1_RPS7B&quot;</span>
@@ -13492,7 +13626,7 @@ algorithm..: common_sub_strings</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pYPK7_TEF1_RPS7B</span><span class="o">.</span><span class="n">write</span><span class="p">()</span>

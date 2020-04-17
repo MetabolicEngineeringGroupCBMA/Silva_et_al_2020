@@ -48,19 +48,19 @@ FEATURES             Location/Qualifiers
                      /direction=BOTH
                      /label="feat1"
                      /ApEinfo_fwdcolor="cyan"
-     misc            complement(2507..3310)
+     misc            complement(2883..3686)
                      /ApEinfo_revcolor="red"
                      /label="URA3"
                      /ApEinfo_fwdcolor="cyan"
-     primer_bind     complement(4052..4069)
+     primer_bind     complement(4428..4445)
                      /label="r2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(4052..4069)
+     primer_bind     complement(4428..4445)
                      /label="r2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(4052..4083)
+     primer_bind     complement(4428..4459)
                      /label="r2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"

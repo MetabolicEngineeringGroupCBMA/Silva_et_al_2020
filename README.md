@@ -34,4 +34,3 @@ These notebooks are tested monthly on a Linux continuous integration server host
 For each Jupyter notebook file, there is a html version with the same name but with a
  `.html` extension instead of `.ipynb`. These files are static and can be viewed with any
 modern web browser.
-

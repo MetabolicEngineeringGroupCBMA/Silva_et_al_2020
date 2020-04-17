@@ -76,6 +76,18 @@ FEATURES             Location/Qualifiers
                      /label="Fw_LEU2"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
+     primer_bind     complement(6356..6373)
+                     /label="r2955"
+                     /ApEinfo_fwdcolor="#baffa3"
+                     /ApEinfo_revcolor="#ffbaba"
+     primer_bind     complement(6356..6373)
+                     /label="r2955"
+                     /ApEinfo_fwdcolor="#baffa3"
+                     /ApEinfo_revcolor="#ffbaba"
+     primer_bind     complement(6356..6387)
+                     /label="r2955"
+                     /ApEinfo_fwdcolor="#baffa3"
+                     /ApEinfo_revcolor="#ffbaba"
      primer_bind     6751..6780
                      /label="866_pYPKpwF"
                      /ApEinfo_fwdcolor="#baffa3"
