@@ -1,6 +1,5 @@
 LOCUS       pLBL3                   7576 bp    DNA     circular UNK 01-JAN-1980
-DEFINITION  cSEGUID_Joos92IiFIJrDvwqO0z-ZBMGR4g
-            cSEGUID_Joos92IiFIJrDvwqO0z-ZBMGR4g_2019-05-25T05:21:42.081832.
+DEFINITION  cSEGUID_Joos92IiFIJrDvwqO0z-ZBMGR4g.
 ACCESSION   pLBL3
 VERSION     pLBL3
 KEYWORDS    .
@@ -8,19 +7,6 @@ SOURCE      .
   ORGANISM  .
             .
 FEATURES             Location/Qualifiers
-     gene            join(7258..7576,1..491)
-                     /gene="kanMX"
-     CDS             join(7258..7576,1..491)
-                     /gene="kanMX"
-                     /codon_start=1
-                     /transl_table=11
-                     /product="geneticin resistance protein"
-                     /protein_id="AAG34543.1"
-                     /translation="MGKEKTHVSRPRLNSNMDADLYGYKWARDNVGQSGATIYRLYGKP
-                     DAPELFLKHGKGSVANDVTDEMVRLNWLTEFMPLPTIKHFIRTPDDAWLLTTAIPGKTA
-                     FQVLEEYPDSGENIVDALAVFLRRLHSIPVCNCPFNSDRVFRLAQAQSRMNNGLVDASD
-                     FDDERNGWPVEQVWKEMHKLLPFSPDSVVTHGDFSLDNLIFDEGKLIGCIDVGRVGIAD
-                     RYQDLAILWNCLGEFSPSLQKRLFQKYGIDNPDMNKLQFHLMLDEFF"
      primer_bind     1867..1896
                      /note="866_pYPKpwF"
                      /ApEinfo_revcolor="red"
@@ -68,10 +54,6 @@ FEATURES             Location/Qualifiers
                      /label="r2955"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     5435..5464
-                     /label="866_pYPKpwF"
-                     /ApEinfo_fwdcolor="#baffa3"
-                     /ApEinfo_revcolor="#ffbaba"
      primer_bind     5435..5447
                      /label="f4008"
                      /ApEinfo_fwdcolor="#baffa3"
@@ -80,30 +62,72 @@ FEATURES             Location/Qualifiers
                      /label="f4008"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     complement(5648..5676)
-                     /label="578_crp42-70"
+     primer_bind     5647..5675
+                     /label="577_crp585-557"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     regulatory      5776..6040
-                     /regulatory_class="terminator"
-                     /note="from TEF"
-     rep_origin      5884
-                     /direction=BOTH
-     misc_feature    6041..6074
-                     /note="loxP site"
-     primer_bind     complement(6122..6141)
-                     /label="666_pYPK0_hygrev"
+     primer_bind     complement(5742..5770)
+                     /label="865_pYPKpwR"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     primer_bind     6749..6777
-                     /label="678_pYPK0_hygfwd:"
+     source          5822..6400
+                     /organism="Saccharomyces cerevisiae S288C"
+                     /mol_type="genomic DNA"
+                     /strain="S288C"
+                     /db_xref="taxon:559292"
+                     /chromosome="XVI"
+     primer_bind     5822..5844
+                     /label="417_ScTEF1tpf"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
-     misc_feature    6826..6859
-                     /note="loxP site"
-     regulatory      6860..7257
-                     /regulatory_class="promoter"
-                     /note="from TEF"
+     primer_bind     complement(6373..6400)
+                     /label="626_ScTEF1tpr_PacI"
+                     /ApEinfo_fwdcolor="#baffa3"
+                     /ApEinfo_revcolor="#ffbaba"
+     primer_bind     6408..6432
+                     /label="468_pCAPs_release_fw"
+                     /ApEinfo_fwdcolor="#baffa3"
+                     /ApEinfo_revcolor="#ffbaba"
+     primer_bind     complement(6435..6455)
+                     /label="567_pCAPsAjiIF"
+                     /ApEinfo_fwdcolor="#baffa3"
+                     /ApEinfo_revcolor="#ffbaba"
+     primer_bind     complement(6435..6455)
+                     /note="567_pCAPsAjiIF"
+                     /ApEinfo_fwdcolor="green"
+                     /ApEinfo_revcolor="red"
+     misc            complement(6435..6457)
+                     /label="567_pCAPsAjiIF"
+     misc            6458..6479
+                     /label="568_pCAPsAjiIR"
+     primer_bind     6460..6479
+                     /label="568_pCAPsAjiIR"
+                     /ApEinfo_fwdcolor="#baffa3"
+                     /ApEinfo_revcolor="#ffbaba"
+     primer_bind     6460..6479
+                     /note="568_pCAPsAjiIR"
+                     /ApEinfo_fwdcolor="green"
+                     /ApEinfo_revcolor="red"
+     primer_bind     complement(6464..6488)
+                     /label="467_pCAPs_release_re"
+                     /ApEinfo_fwdcolor="#baffa3"
+                     /ApEinfo_revcolor="#ffbaba"
+     source          6495..7090
+                     /organism="Saccharomyces cerevisiae S288C"
+                     /mol_type="genomic DNA"
+                     /strain="S288C"
+                     /db_xref="taxon:559292"
+                     /chromosome="XIV"
+     primer_bind     6495..6517
+                     /label="755_RPS7B_fw"
+                     /ApEinfo_fwdcolor="#baffa3"
+                     /ApEinfo_revcolor="#ffbaba"
+     CDS             6519..7177
+                     /label="AmpR"
+     primer_bind     complement(7069..7090)
+                     /label="756_RPS7B_rv"
+                     /ApEinfo_fwdcolor="#baffa3"
+                     /ApEinfo_revcolor="#ffbaba"
      primer_bind     complement(7124..7150)
                      /label="r4008"
                      /ApEinfo_fwdcolor="#baffa3"

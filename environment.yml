@@ -1,8 +1,11 @@
-name: testenvironment
+name: environment
 channels:
 - defaults
 - conda-forge
 - BjornFJohansson
 dependencies:
-- python=3.7
+- python=3.8
 - prettytable
+
+- pytest
+- nbval
