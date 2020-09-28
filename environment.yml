@@ -5,6 +5,7 @@ channels:
 - BjornFJohansson
 dependencies:
 - python=3.8
+- pydna
 - prettytable
 
 - pytest

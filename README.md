@@ -28,8 +28,9 @@ This vector was used as a source for the promoter and terminator for the pLBL2 a
 These notebooks are tested monthly on a Linux continuous integration server hosted by Travis CI:
 
 
-[![Build Status](https://travis-ci.org/BjornFJohansson/JupyterRunTest.svg?branch=master)](https://travis-ci.org/BjornFJohansson/JupyterRunTest)
-
+[![test jupiter notebooks](https://github.com/MetabolicEngineeringGroupCBMA/Silva_et_al_2020/workflows/test%20jupiter%20notebooks/badge.svg)](
+https://github.com/MetabolicEngineeringGroupCBMA/Silva_et_al_2020/actions?query=workflow%3A%22test+jupiter+notebooks%22
+)
 
 For each Jupyter notebook file, there is a html version with the same name but with a
  `.html` extension instead of `.ipynb`. These files are static and can be viewed with any
