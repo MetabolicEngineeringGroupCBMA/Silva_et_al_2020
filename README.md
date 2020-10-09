@@ -1,7 +1,8 @@
 # Silva et al. 2020
 This repository contains Jupyter notebooks describing cloning using
 [Python](https://www.python.org),
-[Jupyter notebooks](https://jupyter.org) and
+[Jupyter notebooks](https://jupyter.org),
+[Biopython](https://biopython.org) and
 [pydna](https://github.com/BjornFJohansson/pydna).
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
