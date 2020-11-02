@@ -16,6 +16,8 @@ The notebooks and other files in this repository accompany the publication:
 [PubMed](https://pubmed.ncbi.nlm.nih.gov/27328301)
 [website](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002049)
 
+[![DOI](https://zenodo.org/badge/256500748.svg)](https://zenodo.org/badge/latestdoi/256500748)
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
 
 
