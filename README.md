@@ -11,8 +11,8 @@ The notebooks and other files in this repository accompany the publication:
 
 ![button](references/abstract.png)
 
+**Silva, P.C., Ceja-Navarro, J.A., Azevedo, F. et al. A novel D-xylose isomerase from the gut of the wood feeding beetle Odontotaenius disjunctus efficiently expressed in Saccharomyces cerevisiae. Sci Rep 11, 4766 (2021). https://doi.org/10.1038/s41598-021-83937-z**
 
-**Silva, Paulo César, Javier A. Ceja-Navarro, Flávio Azevedo, Ulas Karaoz, Eoin L. Brodie, and Björn Johansson. 2021. “A Novel D-Xylose Isomerase from the Gut of the Wood Feeding Beetle Odontotaenius Disjunctus Efficiently Expressed in Saccharomyces Cerevisiae.” *Scientific Reports* 11 (1) (February 26): 4766.**
 [PubMed](https://pubmed.ncbi.nlm.nih.gov/33637780)
 [website](https://www.nature.com/articles/s41598-021-83937-z)
 
