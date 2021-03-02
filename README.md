@@ -12,9 +12,9 @@ The notebooks and other files in this repository accompany the publication:
 ![button](references/abstract.png)
 
 
-**Adams, A. A., Ball, B, & Carter, C. C. (2000). An example of a placeholder reference. Journal of Examples and Placeholders, 23(4), 245-259.**
-[PubMed](https://pubmed.ncbi.nlm.nih.gov/27328301)
-[website](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1002049)
+**Silva, Paulo César, Javier A. Ceja-Navarro, Flávio Azevedo, Ulas Karaoz, Eoin L. Brodie, and Björn Johansson. 2021. “A Novel D-Xylose Isomerase from the Gut of the Wood Feeding Beetle Odontotaenius Disjunctus Efficiently Expressed in Saccharomyces Cerevisiae.” *Scientific Reports* 11 (1) (February 26): 4766.**
+[PubMed](https://pubmed.ncbi.nlm.nih.gov/33637780)
+[website](https://www.nature.com/articles/s41598-021-83937-z)
 
 [![DOI](https://zenodo.org/badge/256500748.svg)](https://zenodo.org/badge/latestdoi/256500748)
 
@@ -51,7 +51,9 @@ This vector was used as a source for the promoter and terminator for the pLBL2 a
 
 [pYPK0_XTTRRG](notebooks/pYPK0_XTTRRG.ipynb)
 
-The index.ipynb notebook is the place to start as it has links to the other notebooks.
+
+[pLBL2_PiXI](notebooks/pLBL2_PiXI.ipynb)
+
 
 Each notebook contain links (usually in the end) to the resulting sequences in Genbank flat file format.
 
