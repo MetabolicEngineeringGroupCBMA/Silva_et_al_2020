@@ -85,33 +85,96 @@ FEATURES             Location/Qualifiers
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
      primer_bind     6408..6432
+                     /locus_tag="468"
+                     /label="468"
+                     /ApEinfo_label="468"
+                     /ApEinfo_fwdcolor="cyan"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
+     primer_bind     6408..6432
                      /label="468_pCAPs_release_fw"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
+     misc_feature    6411..6454
+                     /locus_tag="red"
+                     /label="red"
+                     /ApEinfo_label="red"
+                     /ApEinfo_fwdcolor="#d30000"
+                     /ApEinfo_revcolor="#d30000"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
      primer_bind     complement(6435..6455)
                      /label="567_pCAPsAjiIF"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
      primer_bind     complement(6435..6455)
-                     /note="567_pCAPsAjiIF"
+                     /note=""
+                     /locus_tag="567"
+                     /label="567"
+                     /ApEinfo_label="567"
                      /ApEinfo_fwdcolor="green"
                      /ApEinfo_revcolor="red"
-     misc            complement(6435..6457)
-                     /label="567_pCAPsAjiIF"
-     misc            6458..6479
-                     /label="568_pCAPsAjiIR"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
+     protein_bind    6455..6460
+                     /locus_tag="AjiI"
+                     /label="AjiI"
+                     /ApEinfo_label="AjiI"
+                     /ApEinfo_fwdcolor="cyan"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
      primer_bind     6460..6479
                      /label="568_pCAPsAjiIR"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
      primer_bind     6460..6479
-                     /note="568_pCAPsAjiIR"
+                     /note=""
+                     /locus_tag="568"
+                     /label="568"
+                     /ApEinfo_label="568"
                      /ApEinfo_fwdcolor="green"
                      /ApEinfo_revcolor="red"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
+     misc_feature    6461..6485
+                     /locus_tag="green"
+                     /label="green"
+                     /ApEinfo_label="green"
+                     /ApEinfo_fwdcolor="#4cbb17"
+                     /ApEinfo_revcolor="#00ff06"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
      primer_bind     complement(6464..6488)
                      /label="467_pCAPs_release_re"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
+     primer_bind     complement(6464..6488)
+                     /locus_tag="468(1)"
+                     /label="468(1)"
+                     /ApEinfo_label="468"
+                     /ApEinfo_fwdcolor="cyan"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
+     protein_bind    join(6486..6488,7098..7100)
+                     /locus_tag="EcoRV"
+                     /label="EcoRV"
+                     /ApEinfo_label="EcoRV"
+                     /ApEinfo_fwdcolor="cyan"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
+     terminator      6489..7097
+                     /name="RPS7B_promoter"
+                     /ApEinfo_label="RPS7B_promoter"
+                     /ApEinfo_fwdcolor="#7C4700"
+                     /ApEinfo_revcolor="#FC6600"
+                     /fp="755_RPS7B_fw	ttaaatTTTTAATCCATTAAACAAAAAAT"
+                     /rp="756_RPS7B_rv	taattaaTGGTCAGTTATGTGTCTAGTCT"
+                     /reference="BK006947.3 REGION: complement(444316..444911)"
+                     /label="ft609"
      source          6495..7090
                      /organism="Saccharomyces cerevisiae S288C"
                      /mol_type="genomic DNA"
@@ -128,6 +191,14 @@ FEATURES             Location/Qualifiers
                      /label="756_RPS7B_rv"
                      /ApEinfo_fwdcolor="#baffa3"
                      /ApEinfo_revcolor="#ffbaba"
+     misc_feature    complement(7098..7126)
+                     /locus_tag="494"
+                     /label="494"
+                     /ApEinfo_label="494"
+                     /ApEinfo_fwdcolor="cyan"
+                     /ApEinfo_revcolor="green"
+                     /ApEinfo_graphicformat="arrow_data {{0 0.5 0 1 2 0 0 -1 0
+                     -0.5} {} 0} width 5 offset 0"
      primer_bind     complement(7124..7150)
                      /label="r4008"
                      /ApEinfo_fwdcolor="#baffa3"
