@@ -73,3 +73,16 @@ For each Jupyter notebook file, there is a html version with the same name but w
 modern web browser.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/colored.png)
+
+
+
+## Funding
+
+We are grateful for funding from:
+
+[Fundação para a Ciência e Tecnologia](https://www.fct.pt) Portugal (FCT) through project
+FatVal PTDC/EAM-AMB/032506/2017 funded by national funds through the FCT I.P.
+and by the ERDF through the COMPETE2020 – Programa Operacional Competitividade e Internacionalizacão (POCI).
+
+
+CBMA was supported by the strategic program UIDB/04050/2020 funded by national funds through the FCT I.P.
